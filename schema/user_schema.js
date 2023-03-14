@@ -13,8 +13,8 @@ const userschema = mongoose.Schema({
 })
 
 autoIncrement.initialize(mongoose.connection);
-userschema.plugin(autoIncrement.plugin,"teamscylla_usercontact")
+userschema.plugin(autoIncrement.plugin,"teamscylla_Message")
 
-const user = mongoose.model("teamscylla_usercontact",userschema )
+const user = mongoose.model("teamscylla_Message",userschema )
 
 export default user;
